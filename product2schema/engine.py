@@ -15,6 +15,20 @@ class SyncEngine:
     """
 
     def __init__(self, openai_key: str, zyte_key: str) -> None:
+        """
+        Initialize the SyncEngine with required API keys.
+
+        ### Args:
+            - `openai_key` (str):
+                The API key for OpenAI. OpenAI is used to convert the fetched page content into a standardized JSON product schema.
+            - `zyte_key` (str):
+                The API key for Zyte. Zyte (https://zyte.com) is used to scrape the web pages of the product URLs.
+
+        ### Example:
+        ```python
+        sync_engine = SyncEngine(openai_key="your_openai_key", zyte_key="your_zyte_key")
+        ```
+        """
         self.openai_key = openai_key
         self.zyte_key = zyte_key
 
@@ -59,6 +73,20 @@ class AsyncEngine:
     """
 
     def __init__(self, openai_key: str, zyte_key: str) -> None:
+        """
+        Initialize the AsyncEngine with required API keys.
+
+        ### Args:
+            - `openai_key` (str):
+                The API key for OpenAI. OpenAI is used to convert the fetched page content into a standardized JSON product schema.
+            - `zyte_key` (str):
+                The API key for Zyte. Zyte (https://zyte.com) is used to scrape the web pages of the product URLs.
+
+        ### Example:
+        ```python
+        async_engine = AsyncEngine(openai_key="your_openai_key", zyte_key="your_zyte_key")
+        ```
+        """
         self.openai_key = openai_key
         self.zyte_key = zyte_key
 
