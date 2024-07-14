@@ -1,6 +1,6 @@
 # Product2Schema
 
-**Product2Schema** is a Python library designed to convert product URLs into standardized product schemas.
+**Product2Schema** is a Python library designed to convert product URLs into structured product data.
 
 This library offers both synchronous and asynchronous capabilities to fit various use cases.
 
@@ -9,7 +9,7 @@ The conversion process leverages the Zyte API for fetching page contents and Ope
 ## Features
 
 - Asynchronous and synchronous versions available.
-- Converts product URLs into structured product schemas.
+- Converts product URLs into structured product data.
 - Utilizes Zyte API for web scraping and OpenAI for AI transformation.
 - Easy to integrate with existing Python projects.
 
