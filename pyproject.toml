@@ -12,7 +12,7 @@ dependencies = [
     "python-dotenv>=1",
     "bs4>=0.0.2",
 ]
-name = "Product2Schema"
+name = "product2schema"
 version = "1.0.1"
 description = "Convert product URLs into standardized product schema."
 readme = "README.md"

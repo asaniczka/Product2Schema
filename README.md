@@ -18,7 +18,7 @@ The conversion process leverages the Zyte API for fetching page contents and Ope
 You can install the library from PyPI:
 
 ```sh
-pip install Product2Schema
+pip install product2schema
 ```
 
 ## Usage
