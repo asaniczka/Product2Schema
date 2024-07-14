@@ -13,7 +13,7 @@ dependencies = [
     "bs4>=0.0.2",
 ]
 name = "product2schema"
-version = "1.0.1"
+version = "1.0.2"
 description = "Convert product URLs into standardized product schema."
 readme = "README.md"
 requires-python = ">= 3.10"

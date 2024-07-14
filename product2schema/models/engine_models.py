@@ -2,7 +2,7 @@
 
 from pydantic import BaseModel
 
-from models.product_models import ProductSchema
+from product2schema.models.product_models import ProductSchema
 
 
 class TransformUrlResponse(BaseModel):
