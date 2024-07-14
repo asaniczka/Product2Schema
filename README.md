@@ -28,7 +28,7 @@ pip install product2schema
 The **SyncEngine** class provides a synchronous interface for URL transformation.
 
 ```python
-from Product2Schema import SyncEngine
+from product2schema import SyncEngine
 
 # Initialize the engine with your API keys
 sync_engine = SyncEngine(openai_key="your_openai_key", zyte_key="your_zyte_key")
@@ -48,7 +48,7 @@ The **AsyncEngine** class provides an asynchronous interface for URL transformat
 
 ```python
 import asyncio
-from Product2Schema import AsyncEngine
+from product2schema import AsyncEngine
 
 async def main():
     # Initialize the engine with your API keys
