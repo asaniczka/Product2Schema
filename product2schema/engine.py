@@ -3,10 +3,10 @@
 import asyncio
 import time
 
-from extract_metadata import entry_convert_to_schema
-from scrape import entry_handle_page_fetch
-from models.product_models import ProductSchema
-from models.engine_models import TransformUrlResponse
+from product2schema.extract_metadata import entry_convert_to_schema
+from product2schema.scrape import entry_handle_page_fetch
+from product2schema.models.product_models import ProductSchema
+from product2schema.models.engine_models import TransformUrlResponse
 
 
 class SyncEngine:
@@ -95,34 +95,11 @@ class AsyncEngine:
         ai_response, schemed_product = schema_response
         end = time.perf_counter()
 
-        print(f"A transform request took {end-start} seconds")
+        # print(f"A transform request took {end-start} seconds")
         return TransformUrlResponse(
             url=url, cost=ai_response.cost, product_schema=schemed_product
         )
 
 
 if __name__ == "__main__":
-
-    import os
-    from dotenv import load_dotenv
-    from rich import print
-
-    from concurrent.futures import ThreadPoolExecutor
-
-    load_dotenv()
-
-    async def test():
-        engine = AsyncEngine(os.getenv("OPENAI_API_KEY"), os.getenv("ZYTE_KEY"))
-
-        tasks = []
-        for i in range(10):
-            tasks.append(
-                engine.transform_url(
-                    url="https://www.oldandrarewhisky.co.uk/products/tormore-1992-26-year-old-the-first-editions-single-malt-scotch-whisky-70cl-45-7-abv"
-                )
-            )
-        res = await asyncio.gather(*tasks)
-
-        # print(res)
-
-    asyncio.run(test())
+    pass

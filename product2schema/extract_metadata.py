@@ -16,7 +16,7 @@ cwdtoenv()
 load_dotenv()
 
 
-from models.genai_models import (
+from product2schema.models.genai_models import (
     ValidLLMModels,
     LLM_COST_PER_TOKEN,
     LLMMessage,
@@ -24,7 +24,7 @@ from models.genai_models import (
     AIResponse,
     LLMRoles,
 )
-from models.product_models import ProductSchema, OPENAPI_SCHEMA
+from product2schema.models.product_models import ProductSchema, OPENAPI_SCHEMA
 
 
 async def invoke_openai(

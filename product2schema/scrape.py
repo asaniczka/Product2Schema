@@ -3,7 +3,6 @@
 import asyncio
 import httpx
 from bs4 import BeautifulSoup
-import html2text
 
 
 def parse_page(page: str) -> str:

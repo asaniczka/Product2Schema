@@ -1,0 +1,32 @@
+[build-system]
+requires = ['setuptools >= 61.0', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+dependencies = [
+    "chompjs>1",
+    "httpx>=0.20",
+    "pydantic>=2.2",
+    "wrapworks>=1",
+    "rich>=10",
+    "python-dotenv>=1",
+    "bs4>=0.0.2",
+]
+name = "Product2Schema"
+version = "1.0.1"
+description = "Convert product URLs into standardized product schema."
+readme = "README.md"
+requires-python = ">= 3.10"
+authors = [{ name = "Asaniczka", email = "asaniczka@gmail.com" }]
+maintainers = [{ name = "Asaniczka", email = "asaniczka@gmail.com" }]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/asaniczka/Product2Schema"
